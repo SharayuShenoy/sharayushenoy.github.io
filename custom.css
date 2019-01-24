@@ -28,8 +28,9 @@
   transition: ease-in-out color .15s;
 }
 .header a:hover {
-  color: #29102E;
+  color: #ffffff;
   text-decoration: none;
+  font-weight: bold;
 }
 
 .height-100 {
