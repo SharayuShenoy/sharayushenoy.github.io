@@ -6,17 +6,17 @@
  * Custom translucent site header
  */
 
-.site-header {
-  background-color: rgba(0, 0, 0, .85);
+.header {
+  background-color: rgba(253, 194, 190, .85);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
   backdrop-filter: saturate(180%) blur(20px);
 }
-.site-header a {
-  color: #999;
+.header a {
+  color: #4D2A4F;
   transition: ease-in-out color .15s;
 }
-.site-header a:hover {
-  color: #fff;
+.header a:hover {
+  color: #29102E;
   text-decoration: none;
 }
 
@@ -24,7 +24,7 @@
  * Dummy devices (replace them with your own or something else entirely!)
  */
 
-.product-device {
+.project-card {
   position: absolute;
   right: 10%;
   bottom: -30%;
@@ -36,7 +36,7 @@
   transform: rotate(30deg);
 }
 
-.product-device::before {
+.project-card::before {
   position: absolute;
   top: 10%;
   right: 10px;
@@ -47,7 +47,7 @@
   border-radius: 5px;
 }
 
-.product-device-2 {
+.project-card-2 {
   top: -25%;
   right: auto;
   bottom: 0;
