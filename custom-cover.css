@@ -108,6 +108,11 @@ body {
 .cover-heading {
   color: #fd7e14;
 }
+
 .card {
- background-color:rgba(0,0,0,0) 
+ background-color:rgba(248,249,250,0.11) 
+}
+
+.card-header {
+ background-color:rgba(0,0,0,0.16) 
 }
