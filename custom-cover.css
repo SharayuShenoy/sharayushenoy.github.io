@@ -102,10 +102,6 @@ body {
   font-weight: 700;
 }
 
-
-/*
- * Footer
- */
-.mastfoot {
-  color: rgba(255, 255, 255, .5);
+.cover-heading {
+  color: #fd7e14;
 }
