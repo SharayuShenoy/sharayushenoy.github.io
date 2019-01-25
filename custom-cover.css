@@ -9,7 +9,17 @@ a:hover {
   color: #fff;
 }
 
-
+.custom-header {
+  position: absolute;
+  right: 10%;
+  bottom: -30%;
+  width: 300px;
+  height: 540px;
+  background-color: #333;
+  border-radius: 21px;
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
 
 
 /*
@@ -19,7 +29,7 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: #333;
+  
 }
 
 body {
