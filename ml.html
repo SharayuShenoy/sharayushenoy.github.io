@@ -36,7 +36,7 @@
       <div class="col-md-12">
         <h2 class="featurette-heading">Big Idea</h2>
         <p class="lead">
-          
+          Today, safety has become a huge concern and curbing crime has become a necessity. One would want to know if an area safe enough especially when a person is new to that place. Travelling alone is a risk and knowing "Can I go out in the evening?" is what inspired us to build a solution that can answer these questions for us. Our proposed idea will analyze historical crime data (currently restricted to Austin) and predict what is the crime severity in a neighbourhood or location is during a particular time of the day. This will enable people determine their safety levels and decide whether or not to go to a certain place at certain time. This solution will benefit not just people who live in that neighborhood/area/city but also people who are visiting from outside.
         </p>
       </div>
       
@@ -44,10 +44,30 @@
     <hr class="featurette-divider">    
   <div class="row featurette">
       <div class="col-md-12">
-        <h2 class="featurette-heading">Experiments</h2>
+        <h2 class="featurette-heading">Experimental Methods</h2>
+        We decided to solve the problem using 2 approaches.
+        <p class="lead">Method 1: Supervised Learning</p>
         <p class="lead">
-          
+          Method 1 of solving the problem uses classification algorithms to determine what is the most probable threat that one may encounter as a given location and what is the severity of that threat.
+<strong>Design Decisions:</strong>
+We decided to use Random Forest Classifier for this method as it was giving the best accuracy score as compared to other classification algorithms.
+Other algorithms that we used were:
+<ul>
+    <li> Decision Tree</li>
+    <li> Ridge Classifier</li>
+    <li> K-nearest Neighbor</li>
+    <li> Neural Network</li>
+</ul>
         </p>
+    
+    
+    <p class="lead">Method 2: Unsupervised Learning</p>
+    <p class="lead">
+    Method 1 gives the severity of the highest probable threat but with Method 2 we try to solve this and provide the user with a holistic severity rating. Method 2 utilizes unsupervised learning to cluster the dataset and for each cluster based on the all the data-points available in the cluster, severity of the entire cluster is determined based on individual crime severity.
+
+<strong>Design Decisions:</strong>
+We decided to use k-means method of clustering to partition the data into relevant groups. k-mean clustering was compared to hierarchical clustering using ward and linkage. However, since the data is not of hierarchical nature, we decided to use k-means.
+    </p>
       </div>
       
     </div>
