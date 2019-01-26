@@ -43,7 +43,7 @@ body {
 }
 
 .banner2 {
-  background-image: url("Artboard.jpg");
+  background-image: url("img/Artboard.jpg");
   
 }
 
@@ -106,7 +106,7 @@ body {
 }
 
 .card {
- background-color:rgba(248,249,250,0.11) 
+ background-color:#484848 
 }
 
 .card-header {
