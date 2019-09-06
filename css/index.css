@@ -2677,19 +2677,6 @@
 		z-index: 10000;
 	}
 
-		#header .logo {
-			-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-			-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-			-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-			transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-			background-color: #ffffff;
-			color: #242943;
-			display: inline-block;
-			line-height: 1.65em;
-			margin-right: 0.325em;
-			padding: 0 0.125em 0 0.375em;
-		}
-
 		#header h1 {
 			color: inherit;
 			height: inherit;
@@ -2705,6 +2692,19 @@
 				color: #fff;
 				font-weight: 400;
 				border: 0;
+			}
+
+			#header h1 a .logo {
+				-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+				-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+				-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+				transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+				background-color: #ffffff;
+				color: #242943;
+				display: inline-block;
+				line-height: 1.65em;
+				margin-right: 0.325em;
+				padding: 0 0.125em 0 0.375em;
 			}
 
 		#header nav {
