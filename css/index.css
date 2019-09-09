@@ -2296,6 +2296,56 @@
 		margin: 0 0 2em 0;
 	}
 
+/* Bounce */
+
+ul.bounce {
+		list-style: none;
+		padding-left: 0;
+		cursor: default;
+		position: relative;
+		margin: -2em 0 4em -2em;
+	}
+
+		ul.bounce li {
+			-moz-transition: top .15s ease-in-out;
+			-webkit-transition: top .15s ease-in-out;
+			-ms-transition: top .15s ease-in-out;
+			transition: top .15s ease-in-out;
+			position: relative;
+			display: inline-block;
+			top: 0;
+			padding: 2em 0 0 2em;
+		}
+
+			ul.bounce li a {
+				display: block;
+				outline: 0;
+			}
+
+				ul.bounce li a:before {
+					-moz-transition: background-color .2s ease-in-out;
+					-webkit-transition: background-color .2s ease-in-out;
+					-ms-transition: background-color .2s ease-in-out;
+					transition: background-color .2s ease-in-out;
+					display: block;
+					text-align: center;
+					background: #c1cac5;
+					border-radius: 100%;
+					width: 2.25em;
+					height: 2.25em;
+					line-height: 2.175em;
+					font-size: 3em;
+					color: #fff;
+				}
+
+			ul.bounce li:hover {
+				top: -1em;
+			}
+
+				ul.bounce li:hover a:before {
+					background: #b9d2ce;
+				}
+
 /* Actions */
 
 	ul.actions {
@@ -2694,18 +2744,18 @@
 				border: 0;
 			}
 
-			#header h1 a .logo {
-				-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-				-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-				-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-				transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-				background-color: #ffffff;
-				color: #242943;
-				display: inline-block;
-				line-height: 1.65em;
-				margin-right: 0.325em;
-				padding: 0 0.125em 0 0.375em;
-			}
+				#header h1 a, .logo {
+					-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+					-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+					-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+					transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+					background-color: #ffffff;
+					color: #242943;
+					display: inline-block;
+					line-height: 1.65em;
+					margin-right: 0.325em;
+					padding: 0 0.125em 0 0.375em;
+				}
 
 		#header nav {
 			height: inherit;
@@ -2898,12 +2948,12 @@
 /* Banner */
 
 	#banner {
-		background-attachment: scroll,							fixed;
+		background-attachment: scroll, fixed;
 		background-color: #666;
-		background-image: url("img/banner.jpg"), url("../../images/banner.jpg");
-		background-position: top left,						center center;
-		background-repeat: repeat,							no-repeat;
-		background-size: auto,							cover;
+		background-image: url("../img/banner.jpg");
+		background-position: top left, center center;
+		background-repeat: repeat, no-repeat;
+		background-size: cover;
 		color: #fff;
 		padding: 12em 0 20em 0;
 		text-align: center;
@@ -2929,8 +2979,6 @@
 			margin-bottom: 1.75em;
 		}
 
-		#banner input[type="submit"],
-		#banner input[type="reset"],
 		#banner input[type="button"],
 		#banner .button {
 			background-color: transparent;
@@ -2939,22 +2987,16 @@
 			min-width: 12em;
 		}
 
-			#banner input[type="submit"]:hover,
-			#banner input[type="reset"]:hover,
 			#banner input[type="button"]:hover,
 			#banner .button:hover {
 				background-color: rgba(255, 255, 255, 0.1);
 			}
 
-			#banner input[type="submit"]:active,
-			#banner input[type="reset"]:active,
 			#banner input[type="button"]:active,
 			#banner .button:active {
 				background-color: rgba(255, 255, 255, 0.2);
 			}
 
-			#banner input[type="submit"].primary,
-			#banner input[type="reset"].primary,
 			#banner input[type="button"].primary,
 			#banner .button.primary {
 				background: #fff;
@@ -2976,6 +3018,20 @@
 				font-size: 2.75em;
 				margin: 0;
 			}
+				#main > header h2.major {
+					position: relative;
+					border-top: solid 5px #e7eae8;
+					font-size: 1.65em;
+					text-align: center;
+					top: 0.775em;
+				}
+					h2.major span {
+						background: #f5f5f5;
+						position: relative;
+						display: inline-block;
+						top: -0.775em;
+						padding: 0 1.25em 0 1.25em;
+					}
 
 			#main > header p {
 				border-top: solid 2px #e5e5e5;
