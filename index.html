@@ -5,98 +5,68 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="css/index.css" />
+
 	</head>
-
 	<body class="landing is-preload">
-
-	<script type="module" src="app.js"></script>
-
 		<div id="page-wrapper">
 
 			<!-- Header -->
+			<header id="header" class="alt">
+			  <h1><a href="index.html" ><img src="img/logo.png" alt="" class="logo"/></a></h1>
+			  <nav id="nav">
+			    <ul>
+			      <li><a href="index.html">Home</a></li>
+			      <li><a href="allprojects.html">Projects</a></li>
+			      <li><a href="index.html">About</a></li>
+			      <li><a href="resume.pdf" target="_blank" class="button">Resume</a></li>
+			    </ul>
+			  </nav>
+			</header>
 
 
 			<!-- Banner -->
 				<section id="banner">
-					<h2>Hey You! </h2>
-					<p>I'm Sharayu Shenoy!</p>
-					<br/>
-					<!-- <ul class="actions special">
-						<li><a href="#" class="button primary">View Projects</a></li>
-						<li><a href="resume.pdf" target="_blank" class="button">View Resume</a></li>
-					</ul> -->
+					<div class="inner">
+					<h2 class="sec-text"><b>Hey you! I'm Sharayu</b></h2>
+				</br>
+					<p>I am a graduate student at The University of Texas at Austin studying UX and data stuff.
+						<br/> Before that, I spent 4 years of my life developing applications.</p>
+				</div>
 				</section>
 
 			<!-- Main -->
 				<section id="main" class="container">
 
 					<section class="box special">
-						<header class="major">
-							<h2>Placeholder
+						<header class="">
+							<h2> A Developer learning to make things <strong>simpler</strong>
 							<br />
-							for heading</h2>
-							<p>Paceholder for subheading</p>
+							 for the gray stuff in our heads.</h2>
+							<p>(Also, prettier !)</p>
 						</header>
 						<br/>
-						<span>
-							<ul class="bounce">
-								<li><a href="#" class="icon solid fa-search"><span class="label">Magnifier</span></a></li>
-								<li><a href="#" class="icon solid fa-tablet-alt"><span class="label">Tablet</span></a></li>
-								<li><a href="#" class="icon solid fa-flask"><span class="label">Flask</span></a></li>
-								<li><a href="#" class="icon solid fa-cog"><span class="label">Cog?</span></a></li>
-							</ul>
-						</span>
+
 					</section>
 					<header>
-						<h2 class="major"><span>Projects</span></h2>
+						<h2 class="major"><span>Take a look at my projects</span></h2>
 					</header>
-					<div class="row">
-						<div class="col-4 col-12-narrower">
 
-							<section class="box special">
-								<span class="image featured"><img src="images/pic02.jpg" alt="" /></span>
-								<h3>DEVELOPMENT</h3>
-								<p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
-								<ul class="actions special">
-									<li><a href="#" class="button alt">Learn More</a></li>
-								</ul>
-							</section>
 
-						</div>
-						<div class="col-4 col-12-narrower">
-
-							<section class="box special">
-								<span class="image featured"><img src="images/pic03.jpg" alt="" /></span>
-								<h3>DESIGN</h3>
-								<p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
-								<ul class="actions special">
-									<li><a href="#" class="button alt">Learn More</a></li>
-								</ul>
-							</section>
-
-						</div>
-
-						<div class="col-4 col-12-narrower">
-
-							<section class="box special">
-								<span class="image featured"><img src="images/pic03.jpg" alt="" /></span>
-								<h3>RESEARCH</h3>
-								<p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
-								<ul class="actions special">
-									<li><a href="#" class="button alt">Learn More</a></li>
-								</ul>
-							</section>
-
-						</div>
-					</div>
-
+						<span>
+							<ul class="bounce row">
+								<li class="col-3 col-12-narrower"><a href="allprojects.html?type=design" class="icon solid"><img class="image round" src="img/icons/design.jpg" alt=""/><h3>DESIGN</h3></a></li>
+								<li class="col-3 col-12-narrower"><a href="allprojects.html?type=dev" class="icon solid"><img class="image round" src="img/icons/dev.jpg" alt=""/><h3>DEVELOPMENT</h3></a></li>
+								<li class="col-3 col-12-narrower"><a href="allprojects.html?type=research" class="icon solid"><img class="image round" src="img/icons/research.jpg" alt=""/><h3>RESEARCH</h3></a></li>
+								<li class="col-3 col-12-narrower"><a href="allprojects.html" class="icon solid"><img class="image round" src="img/icons/all.jpg" alt=""/><h3>ALL</h3></a></li>
+							</ul>
+						</span>
 				</section>
 
 			<!-- CTA -->
 				<section id="cta">
 
 					<h2>Get in touch with me</h2>
-					<p>sharayushenoy@utexas.edu</p>
+					<h4>sharayushenoy@utexas.edu</h4>
 
 				</section>
 		</div>
@@ -107,6 +77,8 @@
 			<script src="js/vendor/jquery.scrollex.min.js"></script>
 			<script src="js/vendor/browser.min.js"></script>
 			<script src="js/vendor/breakpoints.min.js"></script>
+			<script src="js/stickyheader.js"></script>
+			<script src="js/index.js"></script>
 
 	</body>
 </html>
