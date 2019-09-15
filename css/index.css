@@ -1,5 +1,5 @@
 @import url("fontawesome-all.min.css");
-@import url("https://fonts.googleapis.com/css?family=Josefin+Slab:600,600i,700,700i&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i&display=swap");
 
 	html, body, div, span, applet, object,
 	iframe, h1, h2, h3, p, blockquote,
@@ -113,7 +113,7 @@
 	body {
 		background: #f5f5f5;
 		/* font-family: "Source Sans Pro", sans-serif; */
-		font-family: 'Josefin Slab', serif;
+		font-family: 'Josefin Sans', sans-serif;
 		font-size: 16pt;
 		font-weight: 300;
 		line-height: 1.65em;
@@ -3224,7 +3224,7 @@ ul.bounce {
 		/* Basic */
 
 			body, input, select, textarea {
-				font-size: 13pt;
+				font-size: 14pt;
 			}
 
 		/* Banner */
@@ -3242,7 +3242,7 @@ ul.bounce {
 		/* Basic */
 
 			body, input, select, textarea {
-				font-size: 11pt;
+				font-size: 13pt;
 			}
 
 		/* Header */
@@ -3270,7 +3270,7 @@ ul.bounce {
 		/* Basic */
 
 			body, input, select, textarea {
-				font-size: 11pt;
+				font-size: 13pt;
 			}
 
 	}
@@ -3290,7 +3290,7 @@ ul.bounce {
 			}
 
 			body, input, select, textarea {
-				font-size: 11pt;
+				font-size: 13pt;
 			}
 
 			h2 br, h3 br {
@@ -3515,7 +3515,7 @@ ul.bounce {
 		/* Basic */
 
 			body, input, select, textarea {
-				font-size: 11pt;
+				font-size: 13pt;
 			}
 
 			h2 {
@@ -3647,7 +3647,7 @@ ul.bounce {
 			}
 
 			body {
-				font-size: 11pt;
+				font-size: 13pt;
 			}
 
 		/* Section/Article */
