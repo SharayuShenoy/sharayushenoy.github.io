@@ -64,7 +64,7 @@
   	display: none; /* Hidden by default */
 	}
 
-	@media (min-width: 576px) {
+	@media (min-width: 736px) {
   	.card-columns {
   	  -webkit-column-count: 3;
   	  -moz-column-count: 3;
