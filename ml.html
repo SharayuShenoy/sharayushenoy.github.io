@@ -1,117 +1,108 @@
 <!DOCTYPE HTML>
-<!--
-	Alpha by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+
 <html>
-	<head>
-		<title>Sharayu Shenoy</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="css/index.css" />
-	</head>
-	<body class="is-preload">
-		<div id="page-wrapper">
+<head>
+	<title>Sharayu Shenoy</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="css/index.css" />
+</head>
+<body class="is-preload">
+	<div id="page-wrapper">
 
-			<!-- Header -->
-			<header id="header">
-			  <h1><a href="index.html" ><img src="img/logo.jpg" alt="" class="logo"/></a></h1>
-			  <nav id="nav">
-			    <ul>
-			      <li><a href="index.html">Home</a></li>
-			      <li><a href="allprojects.html">Projects</a></li>
-			      <!-- <li><a href="index.html">About</a></li> -->
-			      <li><a href="resume.pdf" target="_blank" class="button">Resume</a></li>
-			    </ul>
-			  </nav>
+		<!-- Header -->
+		<header id="header">
+			<h1><a href="index.html" ><img src="img/logo.jpg" alt="" class="logo"/></a></h1>
+			<nav id="nav">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="allprojects.html">Projects</a></li>
+					<!-- <li><a href="index.html">About</a></li> -->
+					<li><a href="resume.pdf" target="_blank" class="button">Resume</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- Main -->
+		<section id="main" class="container">
+
+			<header>
+				<h2>Predicting Safety Levels of Neighborhoods in Austin</h2>
+				<p>
+					Contributors: Sharayu Shenoy, Shweta Mane
+					<br/>
+					Course: Machine Learning
+					<br/>
+					Technologies Used: Python, Microsoft Azure
+				</p>
 			</header>
-			<section>
+			<div class="box">
+				<div class="row"><p>Project Deliverables:
+					<strong><a href="https://drive.google.com/open?id=1PJa4JHYEejZQLM-5GzD80P2sEbBD0asn" target="_blank">Video</a>
+					</strong>,
+					<strong><a href="resources/ml_code.pdf" target="_blank">Project Code</a></strong>,
+					and <strong><a href="resources/ml_report.pdf" target="_blank"> Final Paper</a></strong></p>
+				</div>
 
+				<h3>Concept Statement</h3>
+				<p>Today, safety has become a huge concern and curbing crime has become a necessity. One would want to know if an area safe enough especially when a person is new to that place. Travelling alone is a risk and knowing "Can I go out in the evening?" is what inspired us to build a solution that can answer these questions for us. Our proposed idea will analyze historical crime data (currently restricted to Austin) and predict what is the crime severity in a neighbourhood or location is during a particular time of the day. This will enable people determine their safety levels and decide whether or not to go to a certain place at certain time. This solution will benefit not just people who live in that neighborhood/area/city but also people who are visiting from outside.</p>
+			</div>
+			<header>
+				<h2 class="major"><span>Process</span></h2>
+			</header>
+			<div class="box">
+				<h3>Experimental Methods</h3>
+				<p>We decided to solve the problem using 2 approaches.</p>
+				<p>
+					<b>Method 1: Supervised Learning</b>
+				</p>
+				<p>Method 1 of solving the problem uses classification algorithms to determine what is the most probable threat that one may encounter as a given location and what is the severity of that threat.</p>
+				<p>
+					<strong>Design Decisions:</strong>
+					We decided to use Random Forest Classifier for this method as it was giving the best accuracy score as compared to other classification algorithms.
+					Other algorithms that we used were:
+					<ul>
+						<li> Decision Tree</li>
+						<li> Ridge Classifier</li>
+						<li> K-nearest Neighbor</li>
+						<li> Neural Network</li>
+					</ul>
+				</p>
 
-			</section>
-
-			<!-- Main -->
-				<section id="main" class="container">
-
-					<header>
-						<h2>Predicting Safety Levels of Neighborhoods in Austin</h2>
-						<p>
-							Contributors: Sharayu Shenoy, Shweta Mane
-						<br/>
-							Course: Machine Learning
-						<br/>
-							Technologies Used: Python, Microsoft Azure
-						</p>
-					</header>
-					<div class="box">
-						<div class="row"><p>Project Deliverables:
-							<a href="https://drive.google.com/open?id=1PJa4JHYEejZQLM-5GzD80P2sEbBD0asn" target="_blank">Video</a>,
-							<a href="resources/ml_code.pdf" target="_blank">Project Code</a>,
-							and <a href="resources/ml_report.pdf" target="_blank"> Final Paper</a><p>
-						</div>
-
-						<h3>Concept Statement</h3>
-						<p>Today, safety has become a huge concern and curbing crime has become a necessity. One would want to know if an area safe enough especially when a person is new to that place. Travelling alone is a risk and knowing "Can I go out in the evening?" is what inspired us to build a solution that can answer these questions for us. Our proposed idea will analyze historical crime data (currently restricted to Austin) and predict what is the crime severity in a neighbourhood or location is during a particular time of the day. This will enable people determine their safety levels and decide whether or not to go to a certain place at certain time. This solution will benefit not just people who live in that neighborhood/area/city but also people who are visiting from outside.</p>
-					</div>
-					<header>
-						<h2 class="major"><span>Process</span></h2>
-					</header>
-					<div class="box">
-						<h3>Experimental Methods</h3>
-						<p>We decided to solve the problem using 2 approaches.</p>
-						<p><b>Method 1: Supervised Learning</b></p>
-						<p>Method 1 of solving the problem uses classification algorithms to determine what is the most probable threat that one may encounter as a given location and what is the severity of that threat.
-		<strong>Design Decisions:</strong>
-		We decided to use Random Forest Classifier for this method as it was giving the best accuracy score as compared to other classification algorithms.
-		Other algorithms that we used were:
-		<ul>
-		    <li> Decision Tree</li>
-		    <li> Ridge Classifier</li>
-		    <li> K-nearest Neighbor</li>
-		    <li> Neural Network</li>
-		</ul>
-		        </p>
-
-						<p><b>Method 2: Unsupervised Learning</b></p>
-				    <p>
-				    Method 1 gives the severity of the highest probable threat but with Method 2 we try to solve this and provide the user with a holistic severity rating. Method 2 utilizes unsupervised learning to cluster the dataset and for each cluster based on the all the data-points available in the cluster, severity of the entire cluster is determined based on individual crime severity.</p>
+				<p><b>Method 2: Unsupervised Learning</b></p>
+				<p>
+					Method 1 gives the severity of the highest probable threat but with Method 2 we try to solve this and provide the user with a holistic severity rating. Method 2 utilizes unsupervised learning to cluster the dataset and for each cluster based on the all the data-points available in the cluster, severity of the entire cluster is determined based on individual crime severity.
+				</p>
 
 				<p><strong>Design Decisions:</strong>
-				We decided to use k-means method of clustering to partition the data into relevant groups. k-mean clustering was compared to hierarchical clustering using ward and linkage. However, since the data is not of hierarchical nature, we decided to use k-means.
-				    </p>
-					</div>
-					<div class="box">
-						<h3>Results, Observations & FutureScope</h3>
-						<p>Best Accuracy : 87%</p>
-		        <p>
-		          From the experiments conducted, we can see that Unsupervised approach using K-means clustering worked better than Random Forest classifier. Also, including a classifier after clustering the data provided an even higher accuracy and better performance metrics. Considering current and future work, we plan to include other types of offences like DUI in order to increase the usability of the solution. We will be able to develop a model which clusters Austin area into segments based on a relevant feature or combination of features and provides overall crime severity of the location. At any given location and time, user will be able to gauge the crime status and take precautionary measures accordingly.
-		        </p>
-					</div>
-				</section>
+					We decided to use k-means method of clustering to partition the data into relevant groups. k-mean clustering was compared to hierarchical clustering using ward and linkage. However, since the data is not of hierarchical nature, we decided to use k-means.
+				</p>
+			</div>
+			<div class="box">
+				<h3>Results, Observations & FutureScope</h3>
+				<p>Best Accuracy : 87%</p>
+				<p>
+					From the experiments conducted, we can see that Unsupervised approach using K-means clustering worked better than Random Forest classifier. Also, including a classifier after clustering the data provided an even higher accuracy and better performance metrics. Considering current and future work, we plan to include other types of offences like DUI in order to increase the usability of the solution. We will be able to develop a model which clusters Austin area into segments based on a relevant feature or combination of features and provides overall crime severity of the location. At any given location and time, user will be able to gauge the crime status and take precautionary measures accordingly.
+				</p>
+			</div>
+		</section>
 
+		<!-- Footer -->
+		<section id="cta">
+			<h2>Get in touch with me</h2>
+			<h4>sharayushenoy@utexas.edu</h4>
+		</section>
 
-			<!-- Footer -->
+	</div>
 
-					<section id="cta">
+	<!-- Scripts -->
+	<script src="js/vendor/jquery.min.js"></script>
+	<script src="js/vendor/jquery.dropotron.min.js"></script>
+	<script src="js/vendor/jquery.scrollex.min.js"></script>
+	<script src="js/vendor/browser.min.js"></script>
+	<script src="js/vendor/breakpoints.min.js"></script>
+	<script src="js/stickyheader.js"></script>
+	<script src="js/index.js"></script>
 
-						<h2>Get in touch with me</h2>
-						<h4>sharayushenoy@utexas.edu</h4>
-
-					</section>
-
-
-		</div>
-
-		<!-- Scripts -->
-
-			<script src="js/vendor/jquery.min.js"></script>
-			<script src="js/vendor/jquery.dropotron.min.js"></script>
-			<script src="js/vendor/jquery.scrollex.min.js"></script>
-			<script src="js/vendor/browser.min.js"></script>
-			<script src="js/vendor/breakpoints.min.js"></script>
-			<script src="js/stickyheader.js"></script>
-			<script src="js/index.js"></script>
-
-	</body>
+</body>
 </html>
