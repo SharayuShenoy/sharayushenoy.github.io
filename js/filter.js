@@ -1,26 +1,31 @@
 var mytext = getUrlParam('type','all');
 
 function getUrlParam(parameter, defaultvalue){
-    var urlparameter = defaultvalue;
-    if(window.location.href.indexOf(parameter) > -1){
-        urlparameter = getUrlVars()[parameter];
-        }
-    filterSelection(urlparameter);
+  var urlparameter = defaultvalue;
+  if(window.location.href.indexOf(parameter) > -1){
+    urlparameter = getUrlVars()[parameter];
+  }
+  filterSelection(urlparameter);
 }
 
 function getUrlVars() {
-    var vars = {};
-    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
-        vars[key] = value;
-    });
-    return vars;
+  var vars = {};
+  var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+    vars[key] = value;
+  });
+  return vars;
 }
 
 function filterSelection(c) {
   var x, i, p;
   x = document.getElementsByClassName("filterDiv");
-  // p = document.getElementsByClassName(c);
-  if (c == "all") c = "";
+
+  if (c == "all"){
+      c = "";
+  } else {
+    document.getElementById("projectType").innerHTML = capitalizeFLetter(c);
+  }
+  
   for (i = 0; i < x.length; i++) {
     w3RemoveClass(x[i], "show");
     if (x[i].className.indexOf(c) > -1){
@@ -49,4 +54,8 @@ function w3RemoveClass(element, name) {
     }
   }
   element.className = arr1.join(" ");
+}
+
+function capitalizeFLetter(string) {
+  return string[0].toUpperCase() +  string.slice(1);
 }

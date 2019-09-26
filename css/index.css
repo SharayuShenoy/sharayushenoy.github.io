@@ -3164,7 +3164,7 @@ ul.bounce {
 		text-align: center;
 	}
 
-		#cta h2, #cta h3 {
+		#cta h2, #cta h3, #cta a {
 			color: inherit;
 		}
 
